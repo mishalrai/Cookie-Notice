@@ -1,0 +1,55 @@
+.ge-cookie-notice { 
+    position: fixed;
+    bottom: 0;
+    background: darken( $primary-color, 10% ); 
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 9;
+    color: $color_white;
+    @include box-shadow( 0px -1px 8px 0px rgba(6, 6, 6, 0.2) );
+
+    .title-n-desc { 
+        float: left;
+        width: calc( 100% - 300px );
+        text-align: left;
+
+        h4 {
+            margin: 0 0 6px 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 0; 
+            font-size: 15px;
+        }
+    }
+ 
+    .btn-coll{
+        float: right;
+        margin-top: 13px;
+
+        .ge-btn-accept {
+            width: 110px;
+            padding: 7px 0;
+            border: none;
+            background-color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            &:hover{
+                background-color: darken( #fff, 15% );
+            }
+        }
+
+        a {
+            font-size: 16px;
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}
